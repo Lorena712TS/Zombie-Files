@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoDoc - Gestão Inteligente de Documentos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <h2 class="logo">EcoDoc</h2>
+                <ul class="menu">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#antes-depois">Digitalização</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- HERO / APRESENTAÇÃO -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Transforme pilhas de papel em eficiência digital</h1>
+                <p>Digitalização de documentos, organização de arquivos e descarte sustentável para empresas.</p>
+                <button>Solicitar Diagnóstico Gratuito</button> /*fazer ele funcionar*/
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4" alt="documentos digitalizados">
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="cards"> /*colocar efeito*/
+
+                <div class="card">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/dmep/assets/articles/16_How-to-scan-documents_Hero.jpg?id=4b3308d3-e75a-4c92-a457-b75cd53e443f&width=828&output_type=webp" alt="scanner">
+                    <h3>Digitalização</h3>
+                    <p>Transformamos arquivos físicos em documentos digitais organizados e seguros.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="gestão de documentos">
+                    <h3>Gestão de Arquivos</h3>
+                    <p>Organizamos documentos para facilitar buscas e melhorar produtividade.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b" alt="reciclagem">
+                    <h3>Descarte Sustentável</h3>
+                    <p>Arquivos mortos são reciclados ou descartados de forma ambientalmente correta.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="consultoria empresarial">
+                    <h3>Consultoria Verde</h3>
+                    <p>Auxiliamos empresas a reduzir consumo de papel e modernizar processos.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VANTAGENS PARA EMPRESAS -->
+        <section id="vantagens">
+            <h2>Por que empresas estão digitalizando seus arquivos?</h2>
+            <div class="vantagens-grid"> /*colocar efeito*/
+
+                <div class="vantagem">
+                    <h3>📁 Mais espaço</h3>
+                    <p>Elimine salas cheias de arquivos físicos e libere espaço no escritório.</p>
+                </div>
+
+                <div class="vantagem">
+                    <h3>⚡ Acesso rápido</h3>
+                    <p>Documentos digitais podem ser encontrados em segundos.</p>
+                </div>
+
+                <div class="vantagem">
+                    <h3>🔒 Segurança</h3>
+                    <p>Arquivos digitais podem ter backup e proteção contra perdas.</p>
+                </div>
+
+                <div class="vantagem">
+                    <h3>🌱 Sustentabilidade</h3>
+                    <p>Redução significativa do uso de papel nas empresas.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ANTES E DEPOIS -->
+        <section id="antes-depois">
+            <h2>Antes e Depois da Digitalização</h2>
+            <div class="comparacao"> /* passar imagens*/
+
+                <div class="antes">
+                    <h3>Antes</h3>
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="pilhas de papel"> 
+                    <p>Arquivos físicos ocupando espaço e difíceis de organizar.</p>
+                </div>
+                <div class="depois">
+                    <h3>Depois</h3>
+                    <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28" alt="documentos digitais">
+                    <p>Documentos digitalizados, organizados e acessíveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTO AMBIENTAL -->
+        <section id="impacto"> /*colocar mais informações*/
+            <h2>Impacto Ambiental</h2>
+
+            <div class="impacto-container">
+                <div class="contador">
+                    <h3>🌱 Árvores preservadas</h3>
+                    <p id="arvores">0</p>
+                </div>
+
+                <div class="contador">
+                    <h3>♻ Papel reciclado (kg)</h3>
+                    <p id="papel">0</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SIMULADOR -->
+        <section id="simulador">
+            <h2>Simulador de Economia de Papel</h2>
+
+            <p>Descubra quanto papel sua empresa pode economizar.</p>
+
+            <label>Quantidade de funcionários:</label>
+            <input type="number" id="funcionarios" placeholder="Ex: 20"> /* arrumar o negativo*/
+
+            <button onclick="calcularEconomia()">Calcular</button>
+
+            <div id="resultado"></div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato"> /* dividir do simulador ou não*/
+            <h2>Contato</h2>
+            <p>Email: contato@ecodoc.com</p>
+            <p>Telefone: (00) 00000‑0000</p>
+        </section>
+
+        <footer>
+            <p>EcoDoc Consultoria Ambiental e Digital © 2026</p>
+        </footer>
+
+        <script>
+
+            // contador simples
+            let arvores = 0
+            let papel = 0
+
+            setInterval(() => {
+
+            arvores += Math.floor(Math.random()*2)
+            papel += Math.floor(Math.random()*5)
+
+
+            document.getElementById("arvores").textContent = arvores
+
+            document.getElementById("papel").textContent = papel
+
+            },1500)
+
+            // simulador
+            function calcularEconomia(){
+
+            let funcionarios = document.getElementById("funcionarios").value
+
+            let folhasAno = funcionarios * 1000
+
+            let arvoresSalvas = Math.floor(folhasAno / 8333)
+
+            let resultado = `
+
+            <p>Sua empresa pode economizar aproximadamente <strong>${folhasAno}</strong> folhas por ano.</p>
+
+            <p>Isso equivale a cerca de <strong>${arvoresSalvas}</strong> árvores preservadas.</p>
+
+            `
+
+
+            document.getElementById("resultado").innerHTML = resultado
+
+            }
+
+        </script>
+
+    </body>
+</html>
